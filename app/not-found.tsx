@@ -1,6 +1,9 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
+import { AlertCircle, Home, Mail } from "lucide-react";
+import { redirect } from "next/navigation";
 
 export default function NotFound() {
   return (
@@ -17,19 +20,25 @@ export default function NotFound() {
           <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
 
           <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
+            Página não encontrada.
           </h2>
 
-          <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
+          <h1 className="text-slate-600 mb-8 leading-relaxed">
+            URL pode ter sido alterado, entre em contato
+            <p className="text-black">
+              <Mail className="inline mr-2" size={16} />{" "}
+              suporte@protechsolucoes.net.br
+            </p>
             <br />
-            It may have been moved or deleted.
-          </p>
+          </h1>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+            <Button
+              onClick={() => redirect("/")}
+              className="bg-[#00B874] hover:bg-[#009c62] text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+            >
               <Home className="w-4 h-4 mr-2" />
-              Go Home
+              Página inicial
             </Button>
           </div>
         </CardContent>

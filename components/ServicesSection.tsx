@@ -3,6 +3,7 @@
 import { Zap, Shield, Server } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { motion } from "motion/react";
+import { redirect } from "next/navigation";
 
 /**
  * Services Section Component
@@ -192,6 +193,16 @@ export default function ServicesSection() {
         <div className="my-16 h-px bg-border"></div>
 
         {/* Additional Info */}
+                  <motion.div
+              initial={{ y: 10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+
         <div className="bg-muted/30 rounded-lg p-8 md:p-12 text-center">
           <h3 className="text-foreground mb-4 font-bold text-2xl">
             Soluções Personalizadas
@@ -201,10 +212,12 @@ export default function ServicesSection() {
             desenvolvemos soluções sob medida para suas necessidades
             específicas.
           </p>
-          <button className="inline-block px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors duration-200">
+          <button onClick={() => redirect("https://wa.me/5522988630500")}className="inline-block px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors duration-200">
             Solicitar Consultoria
           </button>
+
         </div>
+            </motion.div>
       </div>
     </section>
   );

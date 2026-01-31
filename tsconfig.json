@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "components/Map.tsx.IGNORE", "components/ui/resizable----"  ],
+, "components/Map.tsx.IGNORE", "components/ui/resizable----", "components/HeroSection--", "components/Header--"  ],
   "exclude": ["node_modules"]
 }

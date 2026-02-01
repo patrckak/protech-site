@@ -1,12 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
-
-/**
- * Footer Component
- * Design: Minimalismo Corporativo Moderno
- * - Footer com informações da empresa
- * - Links úteis e redes sociais
- * - Paleta: Azul profundo com acentos
- */
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

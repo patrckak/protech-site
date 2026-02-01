@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 
 export default function Page() {
   return (
-    <section className="min-w-screen min-h-screen bg-gray-200 flex flex-col items-center justify-center">
+    <section className="shadow-lg min-w-screen min-h-screen bg-gray-200 flex flex-col items-center justify-center">
       <motion.div
         initial={{ y: 10, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -37,7 +37,7 @@ export default function Page() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.button
-            onClick={() => redirect("https://wa.me/+5522988630500")}
+            onClick={() => redirect("/whatsapp")}
             className="px-6 py-3 rounded-xl bg-[#00B874] text-white font-semibold shadow-lg"
             animate={{
               boxShadow: [

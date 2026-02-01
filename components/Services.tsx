@@ -114,22 +114,28 @@ export default function ServicesSection() {
               <CardContent>
                 <span className="font-medium">
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Atendimento 24/7</p>
+                    • <p className="font-light">Monitoramento 24/7</p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Troca de resistências</p>
+                    • <p className="font-light">Projetos Completos</p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Reparo em disjuntores</p>
+                    • <p className="font-light">Instalação de Equipamentos</p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Automações residenciais</p>
+                    •{" "}
+                    <p className="font-light">
+                      Manutenções Preventivas / Corretivas
+                    </p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Manutenções corretivas</p>
+                    • <p className="font-light">Controles de Acesso</p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Visitas e Laudos Técnicos</p>
+                    • <p className="font-light">Fechaduras Eletronicas</p>
+                  </h1>
+                  <h1 className="flex flex-row gap-2">
+                    • <p className="font-light">Automatizadores de portões</p>
                   </h1>
                 </span>
               </CardContent>
@@ -172,22 +178,34 @@ export default function ServicesSection() {
               <CardContent>
                 <span className="font-medium">
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Atendimento 24/7</p>
+                    • <p className="font-light">Suporte 24/7</p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Troca de resistências</p>
+                    •{" "}
+                    <p className="font-light">
+                      Elaboração e Implementação de Projetos
+                    </p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Reparo em disjuntores</p>
+                    • <p className="font-light">Manutenção de Hardwares</p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Automações residenciais</p>
+                    • <p className="font-light">Cabeamento Estruturado</p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Manutenções corretivas</p>
+                    •{" "}
+                    <p className="font-light">
+                      Limpeza e Montagem de computadores
+                    </p>
                   </h1>
                   <h1 className="flex flex-row gap-2">
-                    • <p className="font-light">Visitas e Laudos Técnicos</p>
+                    •{" "}
+                    <p className="font-light">
+                      Implementação de Sistemas completos (ERP, CRM, PDV...)
+                    </p>
+                  </h1>
+                  <h1 className="flex flex-row gap-2">
+                    • <p className="font-light">Backups em Cloud</p>
                   </h1>
                 </span>
               </CardContent>

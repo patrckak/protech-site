@@ -18,7 +18,7 @@ import { Separator } from "./ui/separator";
 
 export default function ServicesSection() {
   return (
-    <section className="min-w-screen min-h-screen p-10 flex flex-col gap-16">
+    <div id="solucoes" className="min-w-screen min-h-screen p-10 flex flex-col gap-16">
       <span>
         <h2 className="text-3xl justify-center font-extrabold flex flex-row items-center pt-10 text-center gap-2">
           Nossas <p className="font-black   text-[#00B874]">Soluções</p>
@@ -300,6 +300,6 @@ export default function ServicesSection() {
           </span>
         </motion.div>
       </section>
-    </section>
+    </div>
   );
 }
